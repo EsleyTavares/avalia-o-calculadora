@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/estilos.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <div class="logo"></div>
+        </a>
+        <ul class="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="historico.html">Histórico</a></li>
+        </ul>
+        <div id="icone">
+            <h2>olá</h2>
+        </div>
+    </header>
+
+    <ul id="menuMobile">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="historico.html">Histórico</a></li>
+    </ul>
+
+    <div id="calculadora">
+        <h1>Calculadora</h1>
+
+        <div class="label-float">
+            <input id="val1"type="text" name="val1" required>
+            <label for="val1">Valor 1</label>
+        </div>
+
+        <label for="sinal">Operador</label>
+        <select name="sinal" id="sinal">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+
+        <div class="label-float">
+            <input id="val2"type="text" name="val2" required>
+            <label for="val2">Valor 2</label>
+        </div>
+
+        <label for="calc">Calcular</label>
+        <input id="calc" type="button" name="" value="=" onclick="calcular();">
+
+        <br>
+
+        <label for="result">Resultado</label>
+        <input id="result"type="text" name="result">
+
+    </div>
+    <script src="JS/calcular.js"></script>
+    <script src="JS/hamburguer.js"></script>
+</body>
+</html>
